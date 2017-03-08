@@ -3,12 +3,18 @@
 //  Swift App
 //
 //  Created by Jeremy Rosser on 3/8/17.
-//  Copyright © 2017 Jeremy Rosser. All rights reserved.
+//  Copyright © 2017 Jeremy Rosser. All rights reserved..
 //
 
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    @IBOutlet weak var text1: UITextField!
+    
+    @IBOutlet weak var text2: UITextField!
+    
 
     @IBOutlet weak var theLabel: UILabel!
     
@@ -16,11 +22,9 @@ class ViewController: UIViewController {
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-       tapCount = tapCount + 1
-        
-        if tapCount >= 10 {
-            theLabel.text = "That is a bunch of clicks"
-        }
+        print(text1.text!)
+        print(text2.text!)
+    
         
     }
     
