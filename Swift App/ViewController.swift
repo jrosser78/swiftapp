@@ -18,13 +18,14 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var theLabel: UILabel!
     
-    var tapCount = 0
+    
     
     @IBAction func buttonTapped(_ sender: Any) {
         
-        print(text1.text!)
-        print(text2.text!)
-    
+        
+        //Adding two text boxes numeric values
+        theLabel.text = "Answer is... \(Double(text1.text!)! + Double(text2.text!)!)"
+       
         
     }
     
